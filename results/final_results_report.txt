@@ -1,0 +1,48 @@
+6G MARL EXPERIMENT RESULTS
+==========================
+
+1. MARL EVALUATION
+------------------
+         reward  throughput   latency      pdr   energy
+count   20.0000     20.0000   20.0000  20.0000  20.0000
+mean   144.8241      0.4635  408.7052   0.4372   0.7820
+std     53.3562      0.0452   54.3650   0.0254   0.0024
+min      7.7853      0.3543  331.6240   0.3761   0.7784
+25%    115.3547      0.4436  379.7839   0.4202   0.7797
+50%    153.3252      0.4695  399.2719   0.4416   0.7823
+75%    181.3995      0.4937  435.4834   0.4517   0.7833
+max    219.3653      0.5315  554.4620   0.4744   0.7870
+
+2. MARL VS RANDOM BASELINE
+--------------------------
+                MARL  Random Baseline
+reward      144.8241          -0.0421
+throughput    0.4635           0.3231
+latency     408.7052         618.8130
+pdr           0.4372           0.3622
+energy        0.7820           0.6157
+
+3. STATISTICAL ANALYSIS
+----------------------
+    Metric  MARL Mean  MARL Std  MARL CI Lower  MARL CI Upper  Random Mean  Random Std  Random CI Lower  Random CI Upper
+    reward   144.8241   53.3562       121.4397       168.2085      -0.0421      0.1607          -0.1125           0.0283
+throughput     0.4635    0.0452         0.4437         0.4833       0.3231      0.0358           0.3074           0.3388
+   latency   408.7052   54.3650       384.8787       432.5317     618.8130     58.7577         593.0613         644.5647
+       pdr     0.4372    0.0254         0.4260         0.4483       0.3622      0.0219           0.3525           0.3718
+    energy     0.7820    0.0024         0.7809         0.7830       0.6157      0.0061           0.6130           0.6184
+
+4. GENERATED FIGURES
+--------------------
+reward_curve.png
+throughput_curve.png
+latency_curve.png
+pdr_curve.png
+energy_curve.png
+reward_marl_vs_random.png
+throughput_marl_vs_random.png
+latency_marl_vs_random.png
+pdr_marl_vs_random.png
+energy_marl_vs_random.png
+agent_0_feature_importance.png
+agent_1_feature_importance.png
+agent_2_feature_importance.png
